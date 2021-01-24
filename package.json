@@ -1,6 +1,6 @@
 {
   "name": "cross-start",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allows you to define different npm start commands per OS",
   "main": "src/index.js",
   "repository": "https://github.com/wehrstedt/cross-start.git",
