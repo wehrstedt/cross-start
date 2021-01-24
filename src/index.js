@@ -10,8 +10,9 @@ try {
 		if (packageJSON.scripts && packageJSON.scripts[startCommand]) {
 			const command = "npm run start:" + platform;
 			console.log(command);
-			const stdout = require("child_process").execSync(command);
-			console.log(stdout.toString());
+			require("child_process").execSync(command, {
+				stdio: "inherit"
+			});
 		} else {
 			throw new Error("Missing start command for platform '" + platform + "'. Add a script with name '" + startCommand + "' to your package.json.");
 		}
