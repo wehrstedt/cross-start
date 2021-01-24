@@ -11,7 +11,8 @@ try {
 			const command = "npm run start:" + platform;
 			console.log(command);
 			require("child_process").execSync(command, {
-				stdio: "inherit"
+				stdio: "inherit",
+				
 			});
 		} else {
 			throw new Error("Missing start command for platform '" + platform + "'. Add a script with name '" + startCommand + "' to your package.json.");
