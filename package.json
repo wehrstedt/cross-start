@@ -1,0 +1,17 @@
+{
+  "name": "cross-start",
+  "version": "1.0.0",
+  "description": "Allows you to define different npm start commands per OS",
+  "main": "src/index.js",
+  "repository": "https://github.com/wehrstedt/cross-start.git",
+  "author": "Maximilian Wehrstedt",
+  "license": "MIT",
+  "private": false,
+  "bin": {
+    "cross-start": "src/index.js"
+  },
+  "scripts": {
+    "start:win32": "echo Start-command for windows",
+    "start:linux": "echo Start-command for linux"
+  }
+}
