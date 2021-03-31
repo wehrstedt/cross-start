@@ -7,6 +7,13 @@
   "author": "Maximilian Wehrstedt",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "cross-environment",
+    "cross-start",
+    "environment variable",
+    "start",
+    "windows"
+  ],
   "bin": {
     "cross-start": "src/index.js"
   },
